@@ -1,77 +1,65 @@
-# 🎟️ Food Fest Ticket Landing Page
+# Food Fest Ticket Landing Page
 
-A modern, interactive Vue.js landing page for the **Cape Town Food Fest 2026** event. This single-page application showcases ticket tiers (**Bronze, Silver, and Gold**) with pricing, benefits, and interactive features including favorites, sorting, and color-coded tier differentiation.
+A Vue.js landing page for the Cape Town Food Fest 2026 event. The application displays three ticket tiers (Bronze, Silver, and Gold) with pricing, benefits, and interactive features such as favoriting tickets and sorting options.
 
----
+## Project Overview
 
-## 📖 Project Overview
+The Cape Town Food Fest is an annual outdoor food festival featuring chefs, street food vendors, and live music. This landing page allows users to explore ticket options before purchasing.
 
-The **Cape Town Food Fest** is an annual outdoor food festival that brings together renowned chefs, street food vendors, and live musicians.
+Users can:
 
-This landing page showcases ticket tiers with distinct **Bronze**, **Silver**, and **Gold** color schemes, allowing users to explore pricing and benefits before purchasing.
+- View Bronze, Silver, and Gold ticket tiers
+- Compare prices and benefits
+- Mark tickets as favorites
+- Sort tickets by price or featured status
+- Browse the site on desktop, tablet, and mobile devices
 
-The **Silver Tier** is featured with special styling and a badge to highlight its value. Users can favorite ticket tiers, sort tickets by price or featured status, and interact with a modern, responsive interface built using **Vue 3**, **Vuex**, and **Vue Router**.
+The Silver tier is highlighted as the featured ticket option.
 
----
+## Features
 
-## ✨ Features
+- Three ticket tiers with unique color schemes
+- Featured Silver tier with badge styling
+- Favorite/unfavorite tickets
+- Sort by lowest price
+- Sort by highest price
+- Show featured tickets first
+- Responsive design
+- Reusable Vue components
 
-- Three ticket tiers with color differentiation:
-  - Bronze (`#cd7f32`)
-  - Silver (`#c0c0c0`)
-  - Gold (`#ffd700`)
-
-- Featured Silver tier with special badge and styling
-- Interactive favorite functionality with star toggle
-- Sort tickets by:
-  - Price (ascending)
-  - Price (descending)
-  - Featured first
-
-- Responsive design for desktop, tablet, and mobile devices
-- Event header with festival branding and statistics
-- Reusable Vue component architecture
-- Modern user interface with smooth interactions
-
----
-
-## 📸 Screenshot
+## Screenshot
 
 ![Food Fest Ticket Landing Page](./screenshot.png)
 
----
+## Tech Stack
 
-## 🛠️ Tech Stack
+- Vue 3
+- Vuex
+- Vue Router
+- Vite
+- CSS
 
-- **Vue 3**
-- **Vuex** (State Management)
-- **Vue Router**
-- **Vite**
-- **Vanilla CSS** (Scoped Component Styling)
+## Installation
 
----
-
-## 🚀 Installation & Run Instructions
-
-### 1. Clone the Repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/food-fest-ticket-landing-page.git
 ```
 
-### 2. Navigate to the Project Directory
+Navigate to the project folder:
 
 ```bash
 cd food-fest-ticket-landing-page
 ```
 
-### 3. Install Dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 4. Run the Development Server
+Run the development server:
 
 ```bash
 npm run dev
@@ -79,72 +67,43 @@ npm run dev
 
 Open your browser and visit:
 
-```text
 http://localhost:5173
-```
 
----
-
-## 📦 Build for Production
+## Build for Production
 
 ```bash
 npm run build
 ```
 
-The optimized production files will be generated in the `dist` directory.
+The production files will be generated in the `dist` folder.
 
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```text
 src/
 ├── components/
-│   ├── TicketCard.vue    # Individual ticket display with interactions
-│   └── TicketList.vue    # Grid layout with sorting controls
+│   ├── TicketCard.vue
+│   └── TicketList.vue
 ├── data/
-│   └── tickets.js        # Ticket data (prices, benefits, colors)
+│   └── tickets.js
 ├── stores/
-│   └── index.js          # Vuex store with state, mutations, actions, getters
+│   └── index.js
 ├── router/
-│   └── index.js          # Vue Router configuration
+│   └── index.js
 ├── assets/
-│   └── main.css          # Global styles
-├── App.vue               # Main application with header and footer
-└── main.js               # Application entry point
+│   └── main.css
+├── App.vue
+└── main.js
 ```
 
----
+## Usage
 
-## 📋 Usage
+- Browse the available ticket tiers
+- Click the star icon to add or remove favorites
+- Use the sorting options to organize tickets
+- Compare ticket prices and benefits
+- View the featured Silver ticket tier
 
-1. Browse the available ticket tiers.
-2. Compare pricing and included benefits.
-3. Click the ⭐ icon to add or remove a ticket tier from your favorites.
-4. Use the sorting controls to:
-   - View featured tickets first
-   - Sort by lowest price
-   - Sort by highest price
+## Author
 
-5. Explore the responsive layout across different screen sizes.
-6. Identify the featured **Silver Tier** through its highlighted styling and badge.
-
----
-
-## 🎯 Learning Objectives
-
-This project demonstrates:
-
-- Vue 3 component-based development
-- State management with Vuex
-- Routing with Vue Router
-- Dynamic rendering using Vue directives
-- Event handling and user interactions
-- Computed properties and state-driven UI updates
-- Reusable component design
-- Responsive web design principles
-- Modern frontend development with Vite
-
-```
-
-```
+Created as a Vue 3 and Vuex practice project.
