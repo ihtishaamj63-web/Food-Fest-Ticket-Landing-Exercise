@@ -44,22 +44,19 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2026 Cape Town Food Fest. All rights reserved.</p>
-        <p class="footer-small">Built with Vue.js</p>
-      </div>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script>
 import TicketList from "./components/TicketList.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     TicketList,
+    Footer,
   },
 };
 </script>
@@ -207,27 +204,6 @@ body {
   color: #666666;
   max-width: 600px;
   margin: 0 auto;
-}
-
-/* Footer */
-.footer {
-  background: #1a1a2e;
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: auto;
-  border-top: 1px solid #2a2a3e;
-}
-
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.footer-small {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Responsive */
